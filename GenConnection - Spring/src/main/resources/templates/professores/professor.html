@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gen Conection</title>
+
+    <!-- Link Css externo global -->
+    <link rel="stylesheet" href="../../Css/styleGlobal.css">
+
+    <!-- Link css externo painel professor -->
+    <link rel="stylesheet" href="../../Css/painelProfessor.css">
+
+    <!--Link CDN Biblioteca Remix icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- CSS Bootstrap CDN v-5.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    
+
+        <!-- Inicio Menu Nav -->
+        <header class="container-fluid menu-nav">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img class="img-logo" src="../../Images/imgProfessor/logo.png" alt="Imagem Logotipo">
+                        <h1 class="text-light h4">Gen Connection</h1>
+                    </a>
+                    <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                        <ul class="navbar-nav fw-bolder">
+                            <li class="nav-item">
+                                <a class="nav-link text-light" aria-current="page" href="professor">
+                                    <i class="ri-rocket-line border p-2 rounded-circle"></i>
+                                    Oportunidades
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="meusAlunos">
+                                    <i class="ri-hand-heart-line border p-2 rounded-circle"></i>
+                                    Meus Alunos
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="meusCursos">
+                                    <i class="ri-award-line border p-2 rounded-circle"></i>
+                                    Meus Cursos
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="ri-file-history-line border p-2 rounded-circle"></i>
+                                    Gerenciador de tarefas
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item text-primary" href="#">Reposição de aula</a></li>
+                                    <li><a class="dropdown-item text-primary" href="#">Material Didatico</a></li>
+                                    <li><a class="dropdown-item text-primary" href="entrar">Sair</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        </header>
+        <!-- Fim Menu Nav -->
+
+        <!-- Inicio cards main professores -->
+        <main class="container-fluid bg-main-prof">
+            <header class="container py-2">
+
+                <div class="row">
+                    <div class="col-6">
+                        <p class="fs-5 fw-bold">Olá, professor! seja bem vindo(a).</p>
+                    </div>
+                    <div class="col-6 text-end">
+                        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                            <button type="button" class="btn btn-success">
+                                <i class="ri-message-2-line"></i>
+                            </button>
+
+                            <div class="btn-group" role="group">
+                                
+                                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                    <li><a class="dropdown-item" href="#">Alunos</a></li>
+                                    <li><a class="dropdown-item" href="#">Pais</a></li>
+                                </ul>
+                                <button id="btnGroupDrop1" type="button" class="btn btn-warning dropdown-toggle fw-bold"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Mensagens
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col mb-1">
+                        <div class="card card-cursos-prof">
+                            <img src="../../Images/imgProfessor/cursos-professor.jpg" class="card-img-top" alt="Professor estudando">
+                            <div class="card-body">
+                                <h5 class="card-title">Cursos gratuitos</h5>
+                                <p class="card-text">Atualização e desenvolvimento profissional</p>
+                                <a href="#" class="btn btn-outline-light fw-bolder">Saiba mais!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-1">
+                        <div class="card card-cursos-prof">
+                            <img src="../../Images/imgProfessor/nuvem-palavras.png" class="card-img-top" alt="Professor estudando">
+                            <div class="card-body">
+                                <h5 class="card-title">Atividades</h5>
+                                <p class="card-text">Material didatico pronto para baixar em PDF</p>
+                                <a href="#" class="btn btn-outline-light fw-bolder">Escolher!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-1">
+                        <div class="card card-cursos-prof">
+                            <img src="../../Images/imgProfessor/sala-aula.jpg" class="card-img-top" alt="Professor estudando">
+                            <div class="card-body">
+                                <h5 class="card-title">Vagas de Emprego</h5>
+                                <p class="card-text">Oportunidades remuneradas e trabalho voluntario</p>
+                                <a href="#" class="btn btn-outline-light fw-bolder">Saiba mais!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+            
+        </main>
+        <!-- Fim cards main professores -->
+
+        <!--Inicio footer-->
+        <footer class="container-fluid bg-footer">
+            <div class="container py-4 text-light">
+
+                <div class="row py-2">
+                    <div class="col">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Biblioteca Online" aria-label="Search">
+                            <button class="btn btn-outline-dark fw-bolder" type="submit">Pesquisar</button>
+                          </form>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col">
+                        <a href="#" class="nav-link"><h5>Inclusão tecnológica</h5></a>
+                        <a href="#" class="nav-link"><h5>Orientação de Carreira</h5></a>
+                        <a href="#" class="nav-link"><h5>Metodologias de ensino</h5></a>
+                        <a href="#" class="nav-link"><h5>Receba novidades</h5></a>
+                    </div>
+                    <div class="col">
+                        <a href="#" class="nav-link"><h5>Preciso de ajuda!</h5></a>
+                        <a href="#" class="nav-link"><h5>Escolas Parceiras</h5></a>
+                        <a href="#" class="nav-link"><h5>Seja Voluntario</h5></a>
+                        <a href="#" class="nav-link"><h5>Contato</h5></a>
+                        
+                    </div>
+                    <div class="col text-center">
+                        <h5 class="text-start">Redes Sociais</h5>
+                        
+                        <i class="ri-facebook-fill border p-2 rounded-circle"></i>
+                        <i class="ri-linkedin-fill border p-2 rounded-circle"></i>
+                        <i class="ri-instagram-fill border p-2 rounded-circle"></i>
+                        <i class="ri-twitter-fill border p-2 rounded-circle"></i>
+                        
+                        <hr style="height: 6px; border: 2px solid #ffffff; background-color: #ffffff;">
+                        <p class="text-start"><i class="ri-copyright-line"></i>Gen Connection, direitos reservados</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--Fim footer-->
+    
+
+
+    <!-- JS Bootstrap CDN v-5.2 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

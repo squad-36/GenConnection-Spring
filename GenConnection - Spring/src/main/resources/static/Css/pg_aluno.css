@@ -1,0 +1,210 @@
+
+.container1 {
+    background: #fff;
+    height: 30px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.8s;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.4);
+    width: 200px;
+}
+
+.container1:hover .input {
+    width: 200px;
+}
+
+.container1 .input {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 0px;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.8s;
+}
+
+.container1 .btn .fas {
+    color: #aa00ff;
+}
+
+.acordeao {
+    max-width: 20%;
+    height: 450px;
+    margin-top: 2px;
+    border-radius: 30px;
+    background: #EC4D36;
+    border-radius: 5px;
+}
+
+.accordion-button {
+    background: #EC4D36;
+    
+}
+
+
+.accordion-collapse {
+    background: #EC4D36;
+    
+}
+
+.selecionar a {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+.selecionar a:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.capa {
+    height: 200px;
+    display: flex;
+    background: linear-gradient(90deg, #B3D703, #d4280d, #B3D703);
+    align-items: center;
+    justify-content: center;
+}
+
+.tema-dark{
+    opacity: 0.4;
+    z-index: 10;
+}
+
+.capa-dark{
+    opacity: 0.6;
+}
+
+.borda-dark{
+    border: 2px solid black;
+}
+
+.perfil img {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    
+}
+
+
+
+.Rancking {
+    
+    height: 420px;
+    background: #EC4D36;
+    border-radius: 5px;
+    padding-top: 10px;
+    text-transform: uppercase;
+    font-family: monospace;
+}
+
+
+
+.Rancking tr {
+    font-family: monospace;
+    color: #fff;
+    text-transform: uppercase;
+    max-width: auto;
+}
+
+.Rancking p {
+    font-family: monospace;
+    color: #fff;
+    border: 2px #fff;
+    padding: 2px;
+    text-transform: uppercase;
+    max-width: auto;
+}
+
+.box {
+    width: 300px;
+    height: 200px;
+    transform-style: preserve-3d;
+    display: flex;
+    margin-right: 1000px;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+}
+
+.box .front,
+.box .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 3px solid #fff;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transition: 1s ease-in-out;
+    display: flex;
+    margin-right: 1000px;
+}
+
+.box .front {
+    transform: perspective(1000px) rotateX(0deg);
+    z-index: 2;
+}
+
+.box .back {
+    transform: perspective(1000px) rotateX(180deg);
+    z-index: 1;
+}
+
+.box:hover .front {
+    transform: perspective(1000px) rotateX(-180deg);
+    z-index: 2;
+}
+
+.box:hover .back {
+    transform: perspective(1000px) rotateX(0deg);
+    z-index: 1;
+}
+
+.box .face h2 {
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    text-transform: uppercase;
+}
+
+.footer {
+    width: 100%;
+    height: 200px;
+}
+
+.bg-aluno{
+    background-color: #cfe0f0d8;
+}
+
+.display-none{
+    display: none;
+}
+
+/* Pg Atividades */
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+}
+
+@media screen and (max-width: 748px) {
+    .Rancking {
+      display: none;
+    }
+    .display-none{
+        display: flex;
+    }
+
+    .dash-aluno{
+        width: 100%;
+    }
+}

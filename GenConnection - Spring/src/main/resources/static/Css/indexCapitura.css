@@ -1,0 +1,114 @@
+ 
+    /*Sobre nós*/
+
+    .container-banner{
+        /* position: relative; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url(../Images/imgCapitura/educ2.png);
+        background-size: contain;
+        height: 600px;
+        width: 100%;
+    }
+
+    
+
+    .style {
+       height: 380px;
+        opacity: 0.9;
+        background-color: #2574a8;
+        width: 100%;  
+    }
+
+    .bg-capitura{
+        background-color: #cfe0f0d8;
+    }
+
+    /*Cards - Recursos */
+
+    .card {
+        margin: 25px;
+        border: none;
+    }
+
+    .card-body a {
+        text-decoration: none;
+        color: rgba(11, 28, 95, 0.866);
+    }
+
+    .row {
+        text-align: center;
+        align-items: center;
+        padding-top: 20px;
+        justify-content: space-around;
+    }
+
+    .list-group {
+
+        font-size: 17px;
+        padding-top: 20px;
+    }
+
+    .list-group-item {
+        background-color: rgba(11, 28, 95, 0.638);
+        color: white;
+    }
+
+    .viagens {
+        display: grid;
+        grid-template-rows: auto;
+    }
+
+    .card-text {
+        font-size: 20px;
+        background-color: #ed4d37;
+        color: white;
+        border-radius: 5px;
+    }
+
+    .recursos {
+        text-align: center;
+        padding-top: 4%;
+        color: #ed4d37;
+    }
+
+    /*Footer*/
+
+    .bg-footer {
+        background: linear-gradient(#2574a8, #2574a8);
+
+    }
+
+   
+
+    @media screen and (max-width: 1000px) {
+
+        .container-banner{
+           padding-top: 20px;
+           align-items: flex-start;
+        }
+
+        .style{
+            height: 420px;
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        .style{
+            height: 490px;
+        }
+    }
+
+    @media screen and (max-width: 425px) {
+        .container-banner{
+            height: 630px;
+            padding-top: 0;
+            align-items: flex-start;
+            opacity: 0.9;
+        }
+
+        .style{
+            height: 100%;
+        }
+    }

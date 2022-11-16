@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gen Conection</title>
+
+    <!-- CSS Bootstrap CDN v-5.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!--LINK CDN REMIX ICON-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../Css/styleGlobal.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="../../Css/login.css">
+</head>
+
+<body>
+    <main class="bg-main-login">
+        <!-- Inicio Menu Nav -->
+        <header class="container-fluid menu-nav">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                
+                
+                    <a class="navbar-brand" href="#">
+                        <img class="img-logo" src="../../Images/imgProfessor/logo.png" alt="Imagem Logotipo">
+                        <h1 class="text-light h4">Gen Connection</h1>
+                    </a>
+                    <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse"
+ 
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                        <ul class="navbar-nav fw-bolder">
+                            <li class="nav-item">
+                                <a class="nav-link text-light" aria-current="page" href="entrar">
+                                    <i class="ri-reply-line"></i>
+                                    Voltar
+                                </a>
+                            </li>
+
+                            
+                    </div>
+                </div>
+            </nav>
+
+        </header>
+        <!-- Fim Menu Nav -->
+
+        <!--Container do formulário de login-->
+        <div class="wrapper bg-white">
+            <h4> <img class="img-login" style="height:50px; width: 100px;" src="../../Images/imgProfessor/logo.png" alt=""> Gen
+                Connection</h4>
+
+
+            <!--Usuário-->
+            <form method="POST" th:object="${usuario}" class="pt-3">
+                <div class="form-group py-2">
+                    <div class="input-field"> <span class="far fa-user p-2"></span> <input type="text"
+                            placeholder="Escolha um nome de usuário" required class=""  th:field="*{nome}">
+                    </div>
+                    
+                     <div class="input-field mt-3"> <span class="far fa-envelope p-2"></span> <input type="text"
+                            placeholder="Insira seu email" required class="" th:field="*{email}">
+                    </div>
+
+                <!--Identificação-->
+                
+             
+
+                <!--Senha-->
+                <div class="form-group py-1 pb-2">
+                    <div class="input-field"> <span class="fas fa-lock p-2"></span> <input type="text"
+                            placeholder="Insira uma senha" required class="" > <button class="btn bg-white text-muted">
+                            <span class="far fa-eye-slash"></span> </button>
+                    </div>
+                </div>
+
+                <!--Confirmar Senha-->
+                <div class="form-group py-1 pb-2">
+                    <div class="input-field"> <span class="fas fa-lock p-2"></span> <input type="text"
+                            placeholder="Confirme sua senha" required class="" th:field="*{senha}"> <button class="btn bg-white text-muted">
+                            <span class="far fa-eye-slash"></span> </button>
+                    </div>
+                </div>
+
+                <!--Cadastrar-->
+                <div class="d-flex align-items-start">
+                </div> <button class="btn btn-block text-center my-3">Cadastrar</button>
+                </div>
+
+
+
+            </form>
+        </div>
+
+
+    </main>
+
+
+    <!-- JS Bootstrap CDN v-5.2 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
