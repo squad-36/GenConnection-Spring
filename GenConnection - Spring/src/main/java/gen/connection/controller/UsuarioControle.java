@@ -18,4 +18,9 @@ public class UsuarioControle {
 	public String index() {
 	 return "usuario/index";
 	}
+ 	
+ 	@GetMapping("/professor")
+	public String professor() {
+	 return "usuario/professor";
+	}
 }

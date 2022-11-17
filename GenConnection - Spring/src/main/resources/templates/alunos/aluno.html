@@ -198,7 +198,7 @@
 
     <!-- Fim Modal -->
 
-    <!------------------Inicio navbar--------------->
+    <!--Inicio navbar---->
     <section class="container-fluid menu-nav">
         <div class="container">
             <div class="row">
@@ -215,7 +215,7 @@
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                         <ul class="navbar-nav fw-bolder">
                             <li class="nav-item">
-                                <a class="nav-link text-light" aria-current="page" href="index">
+                                <a class="nav-link text-light" aria-current="page" th:href="@{/index}">
                                     <i class="ri-rocket-line border p-2 rounded-circle"></i>
                                     Inicio
                                 </a>
@@ -232,7 +232,11 @@
                                         <a id="btnTema" class="dropdown-item text-primary" href="#">Tema escuro</a>
                                     </li>
 
-                                    <li><a class="dropdown-item text-primary" href="index">Sair</a></li>
+                                    <li><a class="dropdown-item text-primary" th:href="@{/logout}">Sair</a></li>
+                                </ul>
+                            </li>
+
+                                    
                                 </ul>
                             </li>
                         </ul>
@@ -257,7 +261,7 @@
             </div>
             <div class="col text-center">
                 <strong><i class="fas fa-book mr-1"></i> Bem Vindo (a),</strong>
-                <h3 class="profile-username text-center" th:text="${usuario.nome}">Nina Mcintire</h3>
+                <h3 class="profile-username text-center" >Nina Mcintire</h3>
             </div>
             <div class="col-2 display-none my-1">
                 <!-- Button trigger modal -->

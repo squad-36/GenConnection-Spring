@@ -22,7 +22,12 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		http.authorizeRequests().antMatchers("/adminlte/**").permitAll().antMatchers("/Images/**").permitAll()
-				.antMatchers("/js/**").permitAll().antMatchers("/plugins/**").permitAll().antMatchers("/Css/**").permitAll().anyRequest().authenticated();
+				.antMatchers("/js/**").permitAll()
+				.antMatchers("/plugins/**").permitAll()
+				.antMatchers("/Css/**").permitAll()
+				.antMatchers("/alunos/cadastrar/**").permitAll()
+				.antMatchers("/index/**").permitAll()
+				.anyRequest().authenticated();
 		// .antMatchers("/**/cadastrar").hasAuthority(Perfil.ADMIN.toString())
 		// .antMatchers("/**/editar").hasAuthority(Perfil.ADMIN.toString())
 		// .antMatchers("/**/excluir").hasAuthority(Perfil.ADMIN.toString())
@@ -35,7 +40,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     http.logout()
         .logoutRequestMatcher(
-            new AntPathRequestMatcher("/index", "GET")
+            new AntPathRequestMatcher("/logout", "GET")
         )
         .logoutSuccessUrl("/login");
 

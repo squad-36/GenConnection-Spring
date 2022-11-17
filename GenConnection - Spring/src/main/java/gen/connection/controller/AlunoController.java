@@ -25,7 +25,6 @@ public class AlunoController {
     @Autowired
     private PermissaoRepositorio permissaoRepositorio;
 
-	private Object principal;
 
 //    @GetMapping
 //    public ModelAndView aluno() {
@@ -106,7 +105,11 @@ public class AlunoController {
 		 return modelAndView;
 	    }
 
-	 
+	 @GetMapping("/login")
+	    public ModelAndView login() {	    
+		 ModelAndView modelAndView = new ModelAndView("alunos/login");
+		 return modelAndView;
+	    }
 	 
 	 @GetMapping("/atividades")
 	    public ModelAndView atividades() {	    
